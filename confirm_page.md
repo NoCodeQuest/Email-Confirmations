@@ -29,7 +29,7 @@ Which is the url to your CMS Collection Page. Also...notice the trailering `/` t
 
 <img src='assets/confirm_page_03.png' width='800px'>
 
-Bound to <a href="https://github.com/NoCodeQuest/Email-Confirmations/blob/main/confirm_page.js#L16-L17">this snippet of code</a>:
+Bound to <a href="https://github.com/NoCodeQuest/Email-Confirmations/blob/main/confirm_page.js#L11-L12">this snippet of code</a>:
 
 ```
 // set the Webflow Error Message Div Block ID to 'error-message'
@@ -38,7 +38,7 @@ let failureMessage = document.getElementById('error-message');
 
 <img src='assets/confirm_page_04.png' width='800px'>
 
-Bound to <a href="https://github.com/NoCodeQuest/Email-Confirmations/blob/main/confirm_page.js#L19-L20">this snippet of code</a>:
+Bound to <a href="https://github.com/NoCodeQuest/Email-Confirmations/blob/main/confirm_page.js#L14-L15">this snippet of code</a>:
 
 ```
 // set the Webflow Success Message Div Block ID to 'success-message'
