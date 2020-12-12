@@ -1,4 +1,4 @@
-## Binding Webflow page elements to the custom Javascript on the Home page.
+## Home page: Binding Webflow page elements to the custom Javascript code
 
 <img src='assets/home_page_01.png' width='800px'>
 
