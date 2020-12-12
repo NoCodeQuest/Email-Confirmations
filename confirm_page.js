@@ -6,12 +6,7 @@ Webflow.push(function() {
   *************************************************/
 
   // replace with your form ID
-  const form = document.getElementById('confirm-form');
-
-  // setting taken from the Webflow forms "Redirect URL" field
-  // example: https://email-confirmable.webflow.io/confirmed/
-  // make sure this url has the trailering "/" or it won't work
-  const redirectTo = event.srcElement.dataset.redirect;
+  const confirmForm = document.getElementById('confirm-form');
 
   // set the Webflow Error Message Div Block ID to 'error-message'
   let failureMessage = document.getElementById('error-message');
@@ -39,7 +34,7 @@ Webflow.push(function() {
   tokenField.setAttribute("type", "hidden");
   tokenField.setAttribute("name", "token");
   tokenField.setAttribute("value", token);
-  form.appendChild(tokenField);
+  confirmForm.appendChild(tokenField);
 
   /*************************************************
     Functional Code for the form submission
@@ -60,7 +55,7 @@ Webflow.push(function() {
 
   // hide the form
   function hideForm() {
-    form.style.display = 'none';
+    confirmForm.style.display = 'none';
   }
 
   // show the loading indicator
@@ -71,7 +66,7 @@ Webflow.push(function() {
 
   // show the form
   function showForm() {
-    form.style.display = 'block';
+    confirmForm.style.display = 'block';
   }
 
   // listen for xhr events
@@ -102,7 +97,7 @@ Webflow.push(function() {
     xhr.onload = function() {
       if (xhr.status === 302) {
         let data = JSON.parse(xhr.responseText);
-        window.location.assign(redirectTo + data.slug);
+        window.location.assign(event.srcElement.dataset.redirect + data.slug);
       } else {
         displayError(errorMessage);
       }
@@ -115,6 +110,6 @@ Webflow.push(function() {
   }
 
   // capture form submit
-  form.addEventListener('submit', triggerSubmit);
+  confirmForm.addEventListener('submit', triggerSubmit);
 
 });
