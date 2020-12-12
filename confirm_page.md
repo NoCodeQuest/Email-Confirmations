@@ -11,14 +11,21 @@ const form = document.getElementById('confirm-form');
 
 <img src='assets/confirm_page_02.png' width='800px'>
 
-Bound to <a href="https://github.com/NoCodeQuest/Email-Confirmations/blob/main/confirm_page.js#L11-L14">this snippet of code</a>:
+Bound to <a href="https://github.com/NoCodeQuest/Email-Confirmations/blob/main/confirm_page.js#L100">this snippet of code</a>:
 
 ```
-// setting taken from the Webflow forms "Redirect URL" field
-// example: https://email-confirmable.webflow.io/confirmed/
-// make sure this url has the trailering "/" or it won't work
-const redirectTo = event.srcElement.dataset.redirect;
+window.location.assign(event.srcElement.dataset.redirect + data.slug);
 ```
+
+You don't need to change anything in the code 👆just be aware that this is the line of code that binds to the above screenshot. You'll need to make sure you add a full and valid url to that field in the Webflow Designer.
+
+For example:
+
+```
+https://email-confirmable.webflow.io/confirmed/
+```
+
+Which is the url to your CMS Collection Page. Also...notice the trailering `/` this is required as the redirect will fail without it.
 
 <img src='assets/confirm_page_03.png' width='800px'>
 
