@@ -19,7 +19,8 @@ Webflow.push(function() {
   // from the backend
   let requestTimeout = 30000;
 
-  // error messages
+  // messages
+  let emailSentHTML = "<br><br>Check your email and confirm your account now (<a href='/'>resend</a>)"
   let errorMessageTimedOut = 'Oops! Seems this timed out. Please try again.';
   let errorMessage = 'Oops! Something went wrong. Please try again.';
 
@@ -53,7 +54,7 @@ Webflow.push(function() {
 
   // show the email successfully sent message
   function emailSuccessfullySent(email) {
-    successMessage.innerHTML = "<strong>" + email + "</strong><br><br>Check your email and confirm your account now.";
+    successMessage.innerHTML = "<strong>" + email + "</strong>" + emailSentHTML;
   }
 
   // show the form
