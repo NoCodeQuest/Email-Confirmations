@@ -1,6 +1,6 @@
 # Email Confirmations
 
-Custom code and assets for the [NoCodeQuest.com Email Confirmations](https://nocodequest.com/email-confirmations) screencast.
+Custom code and assets for the [NoCodeQuest.com Verify Emails on Account Signup](https://nocodequest.com/verify-email-on-account-signup) screencast.
 
 ### Binding Webflow Page Elements w/Custom Code
 
