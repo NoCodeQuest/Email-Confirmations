@@ -1,0 +1,17 @@
+{
+  "Subject": "Confirm your account...",
+  "From": "Chris from NoCodeQuest <chris@nocodequest.com>",
+  "ReplyTo": "chris@nocodequest.com",
+  "To": "_EMAIL_",
+  "CC": null,
+  "BCC": null,
+  "Html": "Howdy 👋 <br><br><a href='https://email-confirmable.webflow.io/confirm?t=_KEY_'>Confirm your account here</a>.<br><br>Cheers!<br>Chris",
+  "Text": "",
+  "Attachments": null,
+  "TrackOpens": true,
+  "TrackClicks": false,
+  "InlineCSS": true,
+  "Group": null,
+  "AddRecipientsToListID": null,
+  "ConsentToTrack": null
+}
